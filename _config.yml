@@ -1,25 +1,31 @@
 # Site settings
-title:
-email:
+title: Franziska Gündert
+email: franziguendert@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Die deutsche Mezzosopranistin Franziska Gündert studierte an der 
+  Musikhochschule Freiburg bei Prof. Sato-Schöllhorn und schloss 
+  ihr Studium mit dem Master im Konzert- und Opernfach ab. Sie 
+  vertiefte ihr Gesangsstudium in der Opernklasse am Conservatorium 
+  of Music in Sydney bei Stephen Yalouris. Desweiteren gab sie 
+  erfolgreiche Konzerte in Australien.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # User setting
-owner:
-email:
-facebook_username:
-twitter_username:
-github_username:
-address:
-  - line:
-  - line:
+owner: Franziska Gündert
+email: franziguendert@gmail.com
+facebook_username: 
+soundcloud_username: franzisinger
+youtube_channel: 
+  # UCMIGKB8C52qv7NfuqU5ZoGg
+address: []
   # Feel free to add more lines here 
-telephone:
-copyright:
+telephone:  # +49 176 20 23 53 64
+copyright: Franziska Gündert
+
+collections:
+  termine:
+    output: true
 
 # API settings
 google_api_key:

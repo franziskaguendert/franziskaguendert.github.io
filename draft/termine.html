@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        var current_page = 1;
+        var records_per_page = 2;
+
+        var objJson = [
+            { title: "AdName 1", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 2", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 3", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 4", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 5", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 6", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 7", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 8", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 9", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"},
+            { title: "AdName 10", date: "2019-01-01 19:30", loc: "Elbphilharmonie", content: "Hallo test"}
+        ]; // Can be obtained from another source, such as your objJson variable
+
+        function prevPage()
+        {
+            if (current_page > 1) {
+                current_page--;
+                changePage(current_page);
+            }
+        }
+
+        function nextPage()
+        {
+            if (current_page < numPages()) {
+                current_page++;
+                changePage(current_page);
+            }
+        }
+
+        function changePage(page)
+        {
+            var btn_next = document.getElementById("btn_next");
+            var btn_prev = document.getElementById("btn_prev");
+            var listing_table = document.getElementById("listingTable");
+            var page_span = document.getElementById("page");
+
+            // Validate page
+            if (page < 1) page = 1;
+            if (page > numPages()) page = numPages();
+
+            listing_table.innerHTML = "";
+
+            // for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
+            for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++)
+            {
+                listing_table.innerHTML += objJson[i].adName + "<br>";
+            }
+            page_span.innerHTML = page;
+
+            if (page == 1) {
+                btn_prev.style.visibility = "hidden";
+            } else {
+                btn_prev.style.visibility = "visible";
+            }
+
+            if (page == numPages()) {
+                btn_next.style.visibility = "hidden";
+            } else {
+                btn_next.style.visibility = "visible";
+            }
+        }
+
+        function numPages()
+        {
+            return Math.ceil(objJson.length / records_per_page);
+        }
+
+        window.onload = function() {
+            changePage(1);
+        };
+    </script> 
+</head>
+<body>
+    <div id="listingTable"></div>
+    <a href="javascript:prevPage()" id="btn_prev"><</a>
+    <a href="javascript:nextPage()" id="btn_next">></a>
+    page: <span id="page"></span>
+</body>

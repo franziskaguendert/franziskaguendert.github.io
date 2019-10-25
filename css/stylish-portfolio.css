@@ -16,25 +16,52 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+h1, h2, h3 {font-family: "Playfair Display", serif;}
+
+h1 {font-size: 4.5em; font-weight: 700;}
+h2 {font-size: 2.5em; font-weight: 700;}
+h3 {font-size: 1.75em; font-weight: 400;}
+a .datecard {color: rgba(0, 0, 0, 0.8);}
+a:hover .datecard {color: #337ab7;}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
+.text-vertical-bottom {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
 }
+.text-vertical-bottom h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+.text-vertical-bottom h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+#header-title {color: snow;}
+
 
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(82, 82, 82, 0.521);
 }
 
 .btn-dark:hover,
@@ -43,6 +70,7 @@ body {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
+
 
 .btn-light {
     border-radius: 0;
@@ -63,6 +91,9 @@ hr.small {
     max-width: 100px;
 }
 
+.datecard {
+    margin-left:10%;
+    }
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -155,7 +186,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/bg.jpg) no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -180,18 +211,47 @@ hr.small {
 
 /* Callout */
 
-.callout {
+.callout-1 {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 450px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    padding-bottom: 10px;
+    background: url(../img/callout-1.jpg) no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+.callout-2 {
+    display: table;
+    width: 100%;
+    height: 400px;
 
+    background: url(../img/callout-2.jpg) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 70%;
+    -o-background-size: cover;
+}
+.bgblack {background-color:black;}
+
+/* Palette
+rgba(0, 217, 209, 1);
+rgba(259, 234, 57, 1);
+
+*/
+#cvtext {
+    background-color: rgba(228, 228, 228, 0.8);
+    padding:10px;
+    color: rgb(29, 29, 29);
+}
+.blurr {    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);}
+.page { padding: 5px 0;}
 /* Portfolio */
 
 .portfolio {
@@ -220,7 +280,7 @@ hr.small {
     margin: 10px;
 }
 
-/* Map */
+/* Map
 
 .map {
     height: 500px;
@@ -230,7 +290,7 @@ hr.small {
     .map {
         height: 75%;
     }
-}
+} */
 
 /*disable custom maps scrolling behaviour*/
 .scrolloff {

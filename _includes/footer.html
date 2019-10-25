@@ -2,30 +2,40 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center">
+        <section id="contact" class="contact"></section>
+        <p>Vielen Dank für Ihr Interesse. Sie können mich gern via E-Mail kontaktieren:</p>
         <h4><strong>{{ site.owner }}</strong>
         </h4>
-        <p>
+        <!-- <p>
           {% for address in site.address %}
           {{ address.line }}<br>
           {% endfor %}
-        </p>
+        </p> -->
         <ul class="list-unstyled">
-          <li><i class="fa fa-phone fa-fw"></i> {{ site.telephone }}</li>
+          {% if site.telephone %}
+            <li><i class="fa fa-phone fa-fw"></i> {{ site.telephone }}</li>
+          {% endif %}
           <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
           </li>
         </ul>
+        </section>
         <br>
         <ul class="list-inline">
-          <li>
-            <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-fw fa-3x"></i></a>
-          </li>
+          {% if site.facebook_username %}
+          <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank" ><i class="fa fa-facebook fa-fw fa-3x"></i></a></li>
+          {% endif %}
+          {% if site.soundcloud_username %}
+          <li><a href="https://soundcloud.com/{{ site.soundcloud_username }}" target="_blank" ><i class="fa fa-soundcloud fa-3x"></i></a></li>
+          {% endif %}
+          {% if site.youtube_channel %}
+          <li><a href="https://youtube.com/channel/{{ site.youtube_channel }}" target="_blank" ><i class="fa fa-youtube-play fa-3x"></i></a></li>
+          {% endif %}
         </ul>
+
+        <a href="/">Home</a> |
+        <a href="/impressum">Impressum</a> |
+        <a href="/datenschutz">Datenschutzerklärung</a>
+
         <hr class="small">
         <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
       </div>

@@ -27,14 +27,14 @@ $(function() {
   });
 });
 
-// Map scrolling behaviour
-// $(document).ready(function() {
-//   $('#map_iframe').addClass('scrolloff');
-//   $('#map').on('click', function () {
-//     $('#map_iframe').removeClass('scrolloff');
-//   });
+$('#termine_btn_next').click(() => {
+  $('html, body').animate({
+      scrollTop: $('#termine').offset().top
+  }, 200);
+});
 
-//   $('#map_iframe').mouseleave(function  () {
-//     $('#map_iframe').addClass('scrolloff');
-//   });
-// });
+$('#termine_btn_prev').click(() => {
+  $('html, body').animate({
+      scrollTop: $('#termine').offset().top
+  }, 200);
+});

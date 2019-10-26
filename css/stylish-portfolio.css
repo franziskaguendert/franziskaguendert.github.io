@@ -43,6 +43,19 @@ a:hover .datecard {color: #337ab7;}
     font-size: 4.5em;
     font-weight: 700;
 }
+
+/* bgpalette */
+.bgyellow {background-color: #f8e936;}
+.bglightyellow {background-color: #f8ee83;}
+.bglightblue {background-color: #d1e7ec;}
+.bgdarkblue {background-color: #0daab3;}
+.bgdeepblue {background-color: #1d324a;}
+.bglightred {background-color: #ff5e82;}
+.bgdarkred {background-color: #661f25;}
+.bgmint {background-color: #d0f2b5;}
+.bgwhite {background-color: ivory;}
+.bggray {background-color: silver;}
+/* Header */
 .section-title h1 {
     font-family: 'Playfair Display', serif;
     margin: 0;
@@ -63,7 +76,69 @@ a:hover .datecard {color: #337ab7;}
         margin-top: 40vh;
         font-size: 65%;
     }
-} */
+} 
+
+.header {
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat top center;
+    background-attachment: scroll;
+    /* z-index: -1; */
+    /* position: fixed; */
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+/* CV */
+
+#cvtext {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(228, 228, 228, 0.8);
+    padding:10px;
+    color: rgb(29, 29, 29);
+}
+
+/* Rpertoire */
+#repertoire {
+    color: ivory;
+    padding-bottom:30px;
+}
+
+/* Media */
+#media {
+    color:ivory;
+    margin-top: 0;
+    padding-top:15px;}
+/* Callout */
+
+.callout-1 {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    padding-bottom: 10px;
+    background: url(../img/callout-1.jpg) no-repeat top center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+.callout-2 {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/callout-2.jpg) no-repeat top center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+.bgblack {background-color:black;}
 
 /* Custom Button Styles */
 
@@ -79,7 +154,6 @@ a:hover .datecard {color: #337ab7;}
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
-
 
 .btn-light {
     border-radius: 0;
@@ -188,35 +262,6 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-.header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    color: black;
-    background: url(../img/bg.jpg) no-repeat top center;
-    background-attachment: scroll;
-    /* z-index: -1; */
-    /* position: fixed; */
-    background-size: cover;
-    -webkit-background-size: cover;
-}
-
-/* .header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/bg.jpg); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top; 
-    -webkit-background-size: 100vmin 100vmin;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} */
 
 /* About */
 
@@ -234,42 +279,13 @@ hr.small {
     margin-bottom: 30px;
 }
 
-/* Callout */
-
-.callout-1 {
-    display: table;
-    width: 100%;
-    height: 450px;
-    color: #fff;
-    padding-bottom: 10px;
-    background: url(../img/callout-1.jpg) no-repeat top center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.callout-2 {
-    display: table;
-    width: 100%;
-    height: 100vmax;
-    background: url(../img/callout-2.jpg) no-repeat top center scroll;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
-}
-.bgblack {background-color:black;}
 
 /* Palette
 rgba(0, 217, 209, 1);
 rgba(259, 234, 57, 1);
 
 */
-#cvtext {
-    background-color: rgba(228, 228, 228, 0.8);
-    padding:10px;
-    color: rgb(29, 29, 29);
-}
+
 .blurr {    filter:blur(4px);
     -o-filter:blur(4px);
     -ms-filter:blur(4px);
@@ -304,22 +320,6 @@ rgba(259, 234, 57, 1);
     margin: 10px;
 }
 
-/* Map
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-} */
-
-/*disable custom maps scrolling behaviour*/
-.scrolloff {
-    pointer-events: none;
-}
 
 /* Footer */
 

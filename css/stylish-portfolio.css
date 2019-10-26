@@ -6,8 +6,9 @@
 
 /* Global Styles */
 
-html,
-body {
+body,
+html
+ {
     width: 100%;
     height: 100%;
 }
@@ -33,8 +34,8 @@ a:hover .datecard {color: #337ab7;}
     display: table-cell;
     text-align: center;
     vertical-align: bottom;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    /* margin-top: 50%;
+    margin-left: 50%; */
 }
 .text-vertical-center h1 {
     margin: 0;
@@ -42,18 +43,21 @@ a:hover .datecard {color: #337ab7;}
     font-size: 4.5em;
     font-weight: 700;
 }
-.text-vertical-bottom h1 {
+.section-title h1 {
     font-family: 'Playfair Display', serif;
     margin: 0;
     font-size: 4.5em;
     font-weight: 700;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
 }
-.text-vertical-bottom h3 {
+.section-title h3 {
     font-family: 'Source Sans Pro', sans-serif;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
 }
-#header-title {color: snow;}
+#header-title {
+    margin-top: 70vh;
+    color: snow;
+}
 
 
 /* Custom Button Styles */
@@ -179,21 +183,35 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
-
 .header {
-    display: table;
-    position: relative;
-    background: url(../img/bg.jpg) no-repeat top center fixed;
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    color: black;
+    background: url(../img/bg.jpg) no-repeat top center;
+    background-attachment: scroll;
+    /* z-index: -1; */
+    /* position: fixed; */
     background-size: cover;
-    -o-background-size: cover;
-    
+    -webkit-background-size: cover;
 }
+
+/* .header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+    -webkit-background-size: 100vmin 100vmin;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
 
 /* About */
 
@@ -219,7 +237,7 @@ hr.small {
     height: 450px;
     color: #fff;
     padding-bottom: 10px;
-    background: url(../img/callout-1.jpg) no-repeat top center fixed;
+    background: url(../img/callout-1.jpg) no-repeat top center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -228,13 +246,12 @@ hr.small {
 .callout-2 {
     display: table;
     width: 100%;
-    height: 400px;
-
-    background: url(../img/callout-2.jpg) no-repeat top center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: 70%;
-    -o-background-size: cover;
+    height: 100vmax;
+    background: url(../img/callout-2.jpg) no-repeat top center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
 }
 .bgblack {background-color:black;}
 

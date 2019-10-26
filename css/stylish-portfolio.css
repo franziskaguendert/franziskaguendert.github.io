@@ -58,7 +58,12 @@ a:hover .datecard {color: #337ab7;}
     margin-top: 60vh;
     color: snow;
 }
-
+@media(max-width:812px) {
+    #header-title {
+        margin-top: 50vh;
+        font-size: 70%;
+    }
+} */
 
 /* Custom Button Styles */
 

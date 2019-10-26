@@ -3,15 +3,18 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center">
         <section id="contact" class="contact"></section>
-        <p>Vielen Dank für Ihr Interesse. Sie können mich gern via E-Mail kontaktieren:</p>
-        <h4><strong>{{ site.owner }}</strong>
-        </h4>
+        <div class="text-center">
+            <h2>Kontakt</h2>
+          </div>
+        <p>Vielen Dank für Ihr Interesse. Sie können mich gern via E-Mail kontaktieren.</p>
+        <h4><strong>{{ site.owner }}</strong></h4>
 
         <ul class="list-unstyled">
           {% if site.telephone %}
             <li><i class="fa fa-phone fa-fw"></i> {{ site.telephone }}</li>
           {% endif %}
-          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          <li><i class="fa fa-envelope-o fa-fw"></i>  
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
           </li>
         </ul>
         </section>

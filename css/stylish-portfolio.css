@@ -73,7 +73,7 @@ a:hover .datecard {color: #337ab7;}
 }
 @media(max-width:812px) {
     #header-title {
-        margin-top: 40vh;
+        margin-top: 50vh;
         font-size: 65%;
     }
 } 

@@ -5,5 +5,5 @@ ort: Bochum Christuskirche
 leitung: Sebastian Breuig
 link: https://chorwerkruhr.de/projekt/verlustundglaube/
 ---
-Werke von Francis Poulenc, Herbert Howells, Thomas Weelkes, Thomas Tomkins, Eric Whitacre
+Werke von Francis Poulenc, Herbert Howells, Thomas Weelkes, Thomas Tomkins und Eric Whitacre.
 Konzertbeginn um 17 Uhr.

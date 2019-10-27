@@ -5,4 +5,4 @@ ort: Ateneul Romãn Bukares
 leitung: René Jacobs
 link:
 ---
-Zürcher Sing-Akademie, Freiburger Barockorchester
+Zürcher Sing-Akademie, Freiburger Barockorchester.

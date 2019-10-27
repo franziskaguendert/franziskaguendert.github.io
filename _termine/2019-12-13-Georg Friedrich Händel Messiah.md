@@ -5,5 +5,5 @@ ort: Genf Victoria Hall
 leitung: Trevor Pinnock
 link:
 ---
-Zürcher Sing-Akademie, Freiburger Barockorchester,
+Zürcher Sing-Akademie, Freiburger Barockorchester.
 Konzertbeginn um 20 Uhr.

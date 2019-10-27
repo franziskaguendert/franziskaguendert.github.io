@@ -5,6 +5,5 @@ ort: Bottrop Liebfrauenkirche
 leitung: Florian Helgath
 link: https://chorwerkruhr.de/projekt/durufle-martin-und-janacek/
 ---
-Chorwerk Ruhr
-
+CHORWERK RUHR
 Konzertbeginn um 18 Uhr.

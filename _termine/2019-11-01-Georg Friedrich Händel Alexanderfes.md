@@ -5,5 +5,5 @@ ort: Essen Philharmonie
 leitung: Ivor Bolton
 link:
 ---
-Konzertbeginn um 17:00 Uhr
-Chorwerk Rohr, Concerto Köln
+CHORWERK RUHR, Concerto Köln.
+Konzertbeginn um 17:00 Uhr.

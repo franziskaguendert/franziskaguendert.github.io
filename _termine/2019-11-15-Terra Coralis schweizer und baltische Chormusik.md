@@ -5,5 +5,5 @@ ort: Tonhalle Maag
 leitung: Florian Helgath
 link: https://terrachoralis.ch/
 ---
-Konzertbeginn um 19:30 Uhr.
 Zürcher Sing-Akademie
+Konzertbeginn um 19:30 Uhr.

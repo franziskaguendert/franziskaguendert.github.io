@@ -5,7 +5,6 @@ ort: Oldenburg St. Peter
 leitung: Manuel Uhing
 link:
 ---
-Alt Solo
-Kammersinfonie Bremen 
-
+Alt Solo, 
+Kammersinfonie Bremen.
 Konzertbeginn um 20 Uhr.

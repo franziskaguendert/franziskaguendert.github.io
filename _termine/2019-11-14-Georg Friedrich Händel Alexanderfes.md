@@ -5,5 +5,5 @@ ort: Hamburg Laeiszhalle
 leitung: Ivor Bolton
 link:
 ---
+CHORWERK RUHR, Concerto Köln.
 Konzertbeginn um 20:00 Uhr.
-Chorwerk Rohr, Concerto Köln
